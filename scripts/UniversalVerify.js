@@ -118,7 +118,7 @@ class UniversalVerify {
      * Returns the version of the UniversalVerify library
      * @returns {string} The version of the UniversalVerify library
      */
-    static get version() { return '0.0.1'; }
+    static get version() { return '0.0.2'; }
 }
 
 export default UniversalVerify;

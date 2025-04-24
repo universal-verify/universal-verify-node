@@ -14,5 +14,5 @@ export default {
             ],
         },
     ],
-    external: ['crypto', 'jwks-rsa', 'jsonwebtoken'],
+    external: ['node:crypto', 'jwks-rsa', 'jsonwebtoken'],
 };

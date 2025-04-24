@@ -1,6 +1,6 @@
 {
   "name": "universal-verify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SDK for integrating with Universal Verify",
   "main": "build/universal-verify.js",
   "type": "module",
