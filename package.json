@@ -1,0 +1,30 @@
+{
+  "name": "universal-verify",
+  "version": "0.0.1",
+  "description": "SDK for integrating with Universal Verify",
+  "main": "build/universal-verify.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/universal-verify/universal-verify-node.git"
+  },
+  "keywords": [
+    "sdk"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/universal-verify/universal-verify-node/issues"
+  },
+  "homepage": "https://github.com/universal-verify/universal-verify-node#readme",
+  "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.2.0",
+    "rollup": "^4.32.1"
+  }
+}
