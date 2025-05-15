@@ -104,11 +104,11 @@ Retrieves user's regional information using an access token.
 - `Promise<object>`: The regional user information object containing:
   - `sub` (string): Unique user identifier
   - `name` (object): User's name information
-    - `firstName` (string): User's first name
-    - `middleNames` (array): Array of user's middle names
-    - `lastName` (string): User's last name
+    - `first_name` (string): User's first name
+    - `middle_names` (array): Array of user's middle names
+    - `last_name` (string): User's last name
     - `suffix` (string): The suffix portion of the user's name
-    - `fullName` (string): User's full name with an attempt at localization
+    - `full_name` (string): User's full name with an attempt at localization
   - `date_of_birth` (string): User's date of birth in ISO 8601 format (YYYY-MM-DD)
   - `id_type` (object): Information about the ID used for verification
     - `country` (string): Country that issued the ID
@@ -158,6 +158,13 @@ Validates an ID token.
 ##### Returns
 
 - `Promise<object>`: The validated token claims
+  - `iss` (string): The issuer (https://api.universalverify.com)
+  - `sub` (string): An ID for the user unique to the integration
+  - `aud` (string): Your integration's access key
+  - `exp` (number): The token's expiration time (unix time)
+  - `iat` (number): The issued at time (unix time)
+  - `verified` (boolean): Whether the user is verified (requires 'verification' scope)
+  - `verification_confidence` (number): Verification confidence level (1-3) (requires 'verification' scope)
 
 #### refreshToken(refreshToken)
 
